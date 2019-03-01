@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*!
+    Theme Name: Vagalumeria
+    Theme URI: https://github.com/rodrigopulse/vagalumeria
+    Description: Tema para o blog Vagalumeria
+    Version: 1.0
+    Author: Rodrigo Godoy
+    Author URI: https://github.com/rodrigopulse
+    Tags: Wordpress, html5, css3, jquery
+*/
+
+// Base
+@import "base/variaveis";
+@import "base/normalize.scss";
+@import "base/resets";
+@import "base/fontes";
+
+// Bibliotecas
+@import "../bibliotecas/bootstrap/bootstrap-grid";
+
+// Componentes
+@import "componentes/grid";
+@import "componentes/titulos";
+@import "componentes/videos";
+@import "componentes/destaque";
+@import "componentes/card";
+@import "componentes/header-principal";
+// Layout
+@import "layout/post";
+@import "layout/contact-form";
+@import "layout/newsletter";

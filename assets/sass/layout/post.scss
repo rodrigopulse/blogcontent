@@ -1,0 +1,51 @@
+.thumb-header-post {
+    width: 100%;
+    min-height: 60%;
+    position: absolute;
+    display: block;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.post-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 30%;
+    padding: 15px;
+    &--sem-topo {
+        top: 0;
+    }
+    &__content {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 770px;
+        padding: 45px 20px 20px 20px;
+        background: #fff;
+        position: relative;
+        top: 0;
+        left: 0;
+        @media screen and (min-width: 1040px) {
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+        h3 {
+            display: block;
+            font-size: 22px;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+    }
+}
+code {
+    padding: 15px;
+    background: #dfdfdf;
+    overflow: scroll;
+    word-break: break-word;
+    display: block;
+    max-width: 100%;
+}

@@ -1,0 +1,22 @@
+.titulo-h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.titulo-h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.titulo-sessao {
+    font-size: 32px;
+    color: $cor-textos;
+    margin-bottom: 20px;
+    &__risca {
+        width: 45px;
+        height: 4px;
+        position: relative;
+        display: block;
+        margin: 0;
+        background: $cor-primaria;
+    }
+}
