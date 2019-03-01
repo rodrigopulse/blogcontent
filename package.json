@@ -1,15 +1,15 @@
 {
-  "name": "wordpress-zero",
-  "themeName": "wordpress-zero",
+  "name": "vagalumeria",
+  "themeName": "vagalumeria",
   "version": "1.0.0",
-  "description": "Tema em branco para criação de outros temas",
+  "description": "Tema para o site Vagalumeria",
   "main": "index.php",
   "scripts": {
     "postinstall": "node ./node_modules/gulp-cli/bin/gulp.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rodrigopulse/Wordpress-Zero"
+    "url": "git+https://github.com/rodrigopulse/vagalumeria"
   },
   "keywords": [
     "wordpress"
@@ -17,18 +17,19 @@
   "author": "Rodrigo Godoy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rodrigopulse/Wordpress-Zero/issues"
+    "url": "https://github.com/rodrigopulse/vagalumeria/issues"
   },
-  "homepage": "https://github.com/rodrigopulse/Wordpress-Zero/#readme",
+  "homepage": "https://github.com/rodrigopulse/vagalumeria/#readme",
   "devDependencies": {
     "browser-sync": "^2.24.4",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-js-minify": "0.0.3",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.0"
   },
   "dependencies": {}
