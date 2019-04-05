@@ -20,5 +20,11 @@ if ( have_posts() ) {
         <?php if ( $i == 3 ) { echo '</div></div><div class="container"><div class="row">'; }
     }
     echo '</div></div>';
-}
+} else { ?>
+    <div class="container container--looping">
+        <h3 class="titulo-sessao">
+            Ainda não temos posts nessa categoria :(
+        </h3>
+    </div>
+<?php }
 get_footer(); ?>
