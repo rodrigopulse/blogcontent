@@ -1,21 +1,18 @@
 <?php get_header();
-$the_query = new WP_Query( array(
-    'posts_per_page' => 12,
-));
-if ( $the_query->have_posts() ) {
+if ( have_posts() ) {
     $i = 0;
-    while ( $the_query->have_posts() ) { $the_query->the_post();
+    while ( have_posts() ) { the_post();
         $i++;
         if ($i == 1) { ?>
             <div class="container container--looping">
                 <h3 class="titulo-sessao">
                     <?php
-                    $categoria = get_the_category();
+                    $categoria = get_the_category($post->id);
                     echo $categoria[0]->name; ?>
                     <div class="titulo-sessao__risca"></div>
                 </h3>
             </div>
-        <?php } 
+        <?php }
         if ( $i == 1 ) { echo '<div class="container"><div class="row">'; } ?>
         <div class="col-sm-12 col-md-4">
             <?php card( get_the_title(), get_the_permalink(), get_the_post_thumbnail_url( '', 'thumb-card' ) ); ?>

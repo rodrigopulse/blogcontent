@@ -8,7 +8,7 @@ if ( $the_query->have_posts() ) {
         $i++;
         if ($i == 1) {
             destaque( get_the_title(), get_the_permalink(), get_the_post_thumbnail_url( '', 'thumb-destaque-mobile' ), get_the_post_thumbnail_url( '', 'thumb-destaque-desktop' ) );
-        } else { 
+        } else {
             if ($i == 2) { ?>
                 <div class="container">
                     <h3 class="titulo-sessao">
@@ -16,7 +16,7 @@ if ( $the_query->have_posts() ) {
                         <div class="titulo-sessao__risca"></div>
                     </h3>
                 </div>
-            <?php } 
+            <?php }
             if ( $i == 2 ) { echo '<div class="container"><div class="row">'; } ?>
             <div class="col-sm-12 col-md-4">
                 <?php card( get_the_title(), get_the_permalink(), get_the_post_thumbnail_url( '', 'thumb-card' ) ); ?>
@@ -26,3 +26,4 @@ if ( $the_query->have_posts() ) {
     }
     echo '</div></div>';
 }
+wp_reset_query(); ?>
