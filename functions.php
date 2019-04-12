@@ -99,4 +99,3 @@ function preferencias_admin_bar() {
     </style> ';
     echo $op;
 }
-
