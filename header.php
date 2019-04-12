@@ -10,7 +10,7 @@
 	<link rel="manifest" href="<?php bloginfo( 'template_url' ); ?>/imagens/favicon/site.webmanifest">
 	<link rel="mask-icon" href="<?php bloginfo( 'template_url' ); ?>/imagens/favicon/safari-pinned-tab.svg" color="#96cb4f">
 	<meta name="msapplication-TileColor" content="#fff">
-	<meta name="theme-color" content="#96cb4f">
+	<meta name="theme-color" content="#222222">
 
 	<?php wp_head(); ?>
 
