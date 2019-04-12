@@ -1,15 +1,15 @@
 {
-  "name": "vagalumeria",
-  "themeName": "vagalumeria",
+  "name": "blogcontent",
+  "themeName": "BlogContent",
   "version": "1.0.0",
-  "description": "Tema para o site Vagalumeria",
+  "description": "Tema para blogs",
   "main": "index.php",
   "scripts": {
     "postinstall": "node ./node_modules/gulp-cli/bin/gulp.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rodrigopulse/vagalumeria"
+    "url": "git+https://github.com/rodrigopulse/blogcontent"
   },
   "keywords": [
     "wordpress"
@@ -17,9 +17,9 @@
   "author": "Rodrigo Godoy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rodrigopulse/vagalumeria/issues"
+    "url": "https://github.com/rodrigopulse/blogcontent/issues"
   },
-  "homepage": "https://github.com/rodrigopulse/vagalumeria/#readme",
+  "homepage": "https://github.com/rodrigopulse/blogcontent/#readme",
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "gulp": "^4.0.0",
