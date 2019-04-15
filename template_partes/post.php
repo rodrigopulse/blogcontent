@@ -1,7 +1,7 @@
 <?php if( wp_is_mobile() ) {
     $thumbnail = get_the_post_thumbnail_url( '', 'post-thumb-mobile' );
 } else {
-    $thumbnail = get_the_post_thumbnail_url( '', 'post-thumb-desktop' );
+    $thumbnail = '';
 } ?>
 <div class="thumb-header-post" style="background-image: url('<?php echo $thumbnail; ?>');"></div>
 <div class="post-container">

@@ -2,19 +2,26 @@
     width: 100%;
     min-height: 60%;
     position: absolute;
-    display: block;
+    display: none;
     top: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 .post-container {
     width: 100%;
     height: auto;
     display: block;
     position: relative;
-    top: 30%;
-    padding: 15px;
+    top: 0;
+    padding: 0;
+    @media screen and (min-width: 768px) {
+        top: 30%;
+        padding: 15px;
+    }
     &--sem-topo {
         top: 0;
     }
