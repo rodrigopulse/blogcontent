@@ -20,9 +20,6 @@
         position: relative;
         top: 0;
         left: 0;
-        @media screen and (min-width: 1040px) {
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        }
         h3 {
             display: block;
             font-size: 22px;
