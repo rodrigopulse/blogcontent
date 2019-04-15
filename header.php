@@ -23,16 +23,16 @@
 	<?php wp_head(); ?>
 	<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
 	<script>
-		var googletag = googletag || {};
-		googletag.cmd = googletag.cmd || [];
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
 	</script>
 
 	<script>
-		googletag.cmd.push(function() {
-			googletag.defineSlot('/94567276/super_desktop_post', [728, 90], 'div-gpt-ad-1555327585248-0').addService(googletag.pubads());
-			googletag.pubads().enableSingleRequest();
-			googletag.enableServices();
-		});
+	googletag.cmd.push(function() {
+		googletag.defineSlot('/94567276/h1_depois_post', [[320, 50], [728, 90]], 'div-gpt-ad-1555348079228-0').addService(googletag.pubads());
+		googletag.pubads().enableSingleRequest();
+		googletag.enableServices();
+	});
 	</script>
 </head>
 <body <?php body_class(); ?>>
