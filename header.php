@@ -21,19 +21,6 @@
 		<meta name="msapplication-TileImage" content="<?php bloginfo( 'template_url' ); ?>/imagens/favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#333333">
 	<?php wp_head(); ?>
-	<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
-	<script>
-	var googletag = googletag || {};
-	googletag.cmd = googletag.cmd || [];
-	</script>
-
-	<script>
-	googletag.cmd.push(function() {
-		googletag.defineSlot('/94567276/h1_depois_post', [[320, 50], [728, 90]], 'div-gpt-ad-1555348079228-0').addService(googletag.pubads());
-		googletag.pubads().enableSingleRequest();
-		googletag.enableServices();
-	});
-	</script>
 </head>
 <body <?php body_class(); ?>>
 <header class="header-principal">
