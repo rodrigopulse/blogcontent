@@ -1,9 +1,3 @@
-<?php if( wp_is_mobile() ) {
-    $thumbnail = '';
-} else {
-    $thumbnail = get_the_post_thumbnail_url( '', 'post-thumb-desktop' );
-} ?>
-<div class="thumb-header-post" style="background-image: url('<?php echo $thumbnail; ?>');"></div>
 <div class="post-container">
     <div class="post-container__content">
         <header>
