@@ -21,12 +21,17 @@
 		<meta name="msapplication-TileImage" content="<?php bloginfo( 'template_url' ); ?>/imagens/favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#333333">
 	<?php wp_head(); ?>
-
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
 	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({
-			google_ad_client: "ca-pub-5289524139634886",
-			enable_page_level_ads: true
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+	</script>
+
+	<script>
+		googletag.cmd.push(function() {
+			googletag.defineSlot('/94567276/super_desktop_post', [728, 90], 'div-gpt-ad-1555327585248-0').addService(googletag.pubads());
+			googletag.pubads().enableSingleRequest();
+			googletag.enableServices();
 		});
 	</script>
 </head>
