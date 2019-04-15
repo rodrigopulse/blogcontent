@@ -99,3 +99,38 @@ function preferencias_admin_bar() {
     </style> ';
     echo $op;
 }
+
+/**
+ * Customização do tema
+ */
+function template_customizer( $wp_customize ) {
+	$wp_customize->add_section(
+        'template',
+        array(
+            'title' => 'Template',
+            'description' => 'Aqui você personaliza o seu template',
+            'priority' => 35,
+        )
+    );
+    /*$wp_customize->add_setting(
+        'titulo_1_home',
+        array(
+            'default' => 'Médico',
+        )
+    );
+    $wp_customize->add_control(
+        'titulo_1_home',
+        array(
+            'label' => 'Título 1',
+            'section' => 'topo_home',
+            'type' => 'text',
+        )
+    );*/
+    $wp_customize->add_setting('imagem_logo');
+    $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize,'imagem_logo',array(
+		'label'      => 'Logo do Blog',
+		'section'    => 'template',
+		'settings'   => 'imagem_logo',
+     )));
+}
+add_action( 'customize_register', 'template_customizer' );
