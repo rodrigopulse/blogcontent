@@ -1,6 +1,11 @@
 <div class="post-container">
     <div class="post-container__content">
         <header>
+            <?php
+                if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+                }
+            ?>
             <h1 class="titulo-h1"><?php the_title(); ?></h1>
             <h2 class="titulo-h2"><?php the_excerpt(); ?></h2>
         </header>
