@@ -3,11 +3,15 @@
         <header>
             <?php
                 if ( function_exists('yoast_breadcrumb') ) {
-                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+                    yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                 }
+                $titulo = get_the_title();
             ?>
-            <h1 class="titulo-h1"><?php the_title(); ?></h1>
-            <h2 class="titulo-h2"><?php the_excerpt(); ?></h2>
+            <h1 class="titulo-h1"><?php echo $titulo; ?></h1>
+            <?php if ( has_excerpt() ) {
+                $subtitulo = get_the_excerpt(); ?>
+                <h2 class="titulo-h2"><?php echo $subtitulo; ?></h2>
+            <?php } ?>
         </header>
         <article>
             <?php if ( have_posts() ) { while ( have_posts() ) { the_post();

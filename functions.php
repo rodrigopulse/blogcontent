@@ -115,7 +115,7 @@ function template_customizer( $wp_customize ) {
     /*$wp_customize->add_setting(
         'titulo_1_home',
         array(
-            'default' => 'Médico',
+            'default' => 'Default,
         )
     );
     $wp_customize->add_control(
